@@ -37,7 +37,7 @@ export default function HistoryPage() {
         );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 p-4">
+    <div className="min-h-screen bg-gradient-to-br my-8 p-4">
       <div className="max-w-4xl mx-auto space-y-6">
         <div className="bg-white rounded-lg shadow-md border">
           <div className="p-6">

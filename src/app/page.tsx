@@ -365,7 +365,7 @@ export default function HomePage() {
                 <button
                   onClick={startGame}
                   disabled={!gameState.homeTeam || !gameState.awayTeam}
-                  className="w-full bg-green-600 hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold py-3 px-4 rounded-md transition-colors"
+                  className="w-full bg-green-600 cursor-pointer hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold py-3 px-4 rounded-md transition-colors"
                 >
                   Start Game
                 </button>
@@ -445,14 +445,14 @@ export default function HomePage() {
                         <button
                           onClick={() => updateScore("home", false)}
                           disabled={isGameOver}
-                          className="border border-gray-300 hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-700 font-semibold py-2 px-3 rounded-md transition-colors"
+                          className="border cursor-pointer border-gray-300 hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-700 font-semibold py-2 px-3 rounded-md transition-colors"
                         >
                           ➖
                         </button>
                         <button
                           onClick={() => updateScore("home", true)}
                           disabled={isGameOver}
-                          className="border border-gray-300 hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-700 font-semibold py-2 px-3 rounded-md transition-colors"
+                          className="border cursor-pointer border-gray-300 hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-700 font-semibold py-2 px-3 rounded-md transition-colors"
                         >
                           ➕
                         </button>
@@ -462,14 +462,14 @@ export default function HomePage() {
                         <button
                           onClick={() => addCard("home", "yellow")}
                           disabled={isGameOver}
-                          className="bg-yellow-500 hover:bg-yellow-600 disabled:bg-gray-100 disabled:cursor-not-allowed text-white font-semibold py-2 px-3 rounded-md transition-colors text-sm"
+                          className="bg-yellow-500 cursor-pointer hover:bg-yellow-600 disabled:bg-gray-100 disabled:cursor-not-allowed text-white font-semibold py-2 px-3 rounded-md transition-colors text-sm"
                         >
                           Yellow
                         </button>
                         <button
                           onClick={() => addCard("home", "red")}
                           disabled={isGameOver}
-                          className="bg-red-500 hover:bg-red-600 disabled:bg-gray-100 disabled:cursor-not-allowed text-white font-semibold py-2 px-3 rounded-md transition-colors text-sm"
+                          className="bg-red-500 cursor-pointer hover:bg-red-600 disabled:bg-gray-100 disabled:cursor-not-allowed text-white font-semibold py-2 px-3 rounded-md transition-colors text-sm"
                         >
                           Red
                         </button>
@@ -512,14 +512,14 @@ export default function HomePage() {
                         <button
                           onClick={() => updateScore("away", false)}
                           disabled={isGameOver}
-                          className="border border-gray-300 hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-700 font-semibold py-2 px-3 rounded-md transition-colors"
+                          className="border cursor-pointer border-gray-300 hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-700 font-semibold py-2 px-3 rounded-md transition-colors"
                         >
                           ➖
                         </button>
                         <button
                           onClick={() => updateScore("away", true)}
                           disabled={isGameOver}
-                          className="border border-gray-300 hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-700 font-semibold py-2 px-3 rounded-md transition-colors"
+                          className="border cursor-pointer border-gray-300 hover:bg-gray-50 disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-700 font-semibold py-2 px-3 rounded-md transition-colors"
                         >
                           ➕
                         </button>
@@ -529,14 +529,14 @@ export default function HomePage() {
                         <button
                           onClick={() => addCard("away", "yellow")}
                           disabled={isGameOver}
-                          className="bg-yellow-500 hover:bg-yellow-600 disabled:bg-gray-100 disabled:cursor-not-allowed text-white font-semibold py-2 px-3 rounded-md transition-colors text-sm"
+                          className="bg-yellow-500 cursor-pointer hover:bg-yellow-600 disabled:bg-gray-100 disabled:cursor-not-allowed text-white font-semibold py-2 px-3 rounded-md transition-colors text-sm"
                         >
                           Yellow
                         </button>
                         <button
                           onClick={() => addCard("away", "red")}
                           disabled={isGameOver}
-                          className="bg-red-500 hover:bg-red-600 disabled:bg-gray-100 disabled:cursor-not-allowed text-white font-semibold py-2 px-3 rounded-md transition-colors text-sm"
+                          className="bg-red-500 cursor-pointer hover:bg-red-600 disabled:bg-gray-100 disabled:cursor-not-allowed text-white font-semibold py-2 px-3 rounded-md transition-colors text-sm"
                         >
                           Red
                         </button>
@@ -580,7 +580,7 @@ export default function HomePage() {
             )}
 
             {gameState.cards.length > 0 && (
-              <div className="bg-white flex rounded-lg shadow-md border">
+              <div className="bg-white rounded-lg shadow-md border">
                 <div className="p-6">
                   <h3 className="text-lg font-semibold mb-4 text-center">
                     Cards
